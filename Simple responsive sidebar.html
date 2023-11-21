@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar</title>
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <img src="./icons8-logo-24.png" alt="" class="sidebar-logo">
+            </header>
+
+
+            <nav class="sidebar-menu">
+                <button type="button">
+                    <img width="30" height="30" src="https://img.icons8.com/material-rounded/24/home.png" alt="home" />
+                    <span>Home</span>
+                </button>
+                <button type="button">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/guest-male.png"
+                        alt="guest-male" />
+                    <span>Account</span>
+                </button>
+                <button type="button" class="has-border">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/settings--v1.png"
+                        alt="settings--v1" />
+                    <span>Setting</span>
+                </button>
+                <button type="button">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/movie--v1.png"
+                        alt="movie--v1" />
+                    <span>Movies</span>
+                </button>
+                <button type="button" class="has-border">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/airpods-pro.png"
+                        alt="airpods-pro" />
+                    <span>Music</span>
+                </button>
+                <button type="button">
+                    <img width="30" height="30" src="https://img.icons8.com/material-outlined/24/picture.png"
+                        alt="picture" />
+                    <span>Pictures</span>
+                </button>
+            </nav>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+</body>
+
+</html>

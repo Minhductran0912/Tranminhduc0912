@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+
+<body>
+
+
+    <button onclick="toggleModal()" type="button">Open Modal</button>
+
+    <div class="modal-background" onclick="toggleModal()">
+        <div class="modal">
+            <h2>Modal Window</h2>
+            <p>
+                You have click to button
+            </p>
+        </div>
+
+        <script>
+            const toggleModal = () => {
+                const bodyClassList = document.body.classList;
+                if (bodyClassList.contains("open")) {
+                    bodyClassList.remove("open");
+                    bodyClassList.add("closed");
+                } else {
+                    bodyClassList.remove("closed");
+                    bodyClassList.add("open")
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
